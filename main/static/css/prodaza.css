@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.osnova{
+    display: block;
+    height: auto;
+    
+    float:left;
+    width: 90%;
+    color: black;
+    margin-top: 1vh;
+}
+.tovar{
+    display: block;
+    width: 40vh;
+    height: 90%;
+    float: left;
+    
+    padding: 0;
+    margin: 1%;
+}
+
+img{
+    height: 40vh;
+    width: 40vh;
+}
+
+p{
+    font-size: 3vh;
+    margin: 0;
+}
+
+.bok_kategorys{
+    display: block;
+    float: left;
+    width: 10%;
+    font-size:3vh;
+    line-height: 2;
+    
+}
+
+.bro{
+    margin: 1%;
+    
+}
+
+.v{
+    
+    height: 5vh;
+    width: 100%;
+    display: block;
+    float: inline-end;
+    text-align: center;
+    list-style: none;
+    
+}
+
+.center{
+    display: inline;
+}
+
+img {
+    transition: transform 0.25s;
+  }
+  
+.photo:hover img {
+    transform: scale(1.1);
+  }
+
+.opi{
+    margin-top: 1vh;
+}

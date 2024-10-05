@@ -1,0 +1,47 @@
+.opus{
+    display: block;
+    padding: 0.5vh;
+    
+    width: 70%;
+    float: left;
+}
+
+.foto{
+    display: block;
+    width: 30%;
+    float: left;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.name{
+    font-size: 7vh;
+    display: block;
+    float: left;
+}
+
+.beng{
+    font-size: 3vh;
+}
+.coust{
+    font-size: 5vh;
+    font-weight: 1vh;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.quantity{
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.vkoh{
+    color: rgb(255, 255, 255);
+    background-color: rgb(234, 28, 28);
+    padding: 0.5vh;
+}

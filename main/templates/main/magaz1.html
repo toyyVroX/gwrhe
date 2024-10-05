@@ -1,0 +1,53 @@
+{% extends 'main/xx.html' %}
+
+{% block title %}Каталог{% endblock %}
+
+{% load static %}
+
+{% block sale %}
+<link rel="stylesheet" href="{% static  'css/prodaza.css' %}">
+
+<div class="bok_kategorys">
+    
+        {% for category in category %}
+        <dr>    
+            <a class="bro" href="{% url "main:category" category.id %}">{{category.name}}</a>
+        </br>    
+        {% endfor %}
+    
+</div>
+
+<div class="osnova">
+
+    {% for product in product %}
+        <div class="photo">
+            <div class="tovar">
+                <a href="{% url 'main:resume' product.id %}">
+                    <img
+                    src="{{product.image.url }}"
+                    >
+                    <p class="opi">{{ product.name}}</p>
+                    <p>{{ product.coust}}грн</p>
+                    <p>{{ product.quantity}}</p>
+                </a>
+                <a class="" href="{% url 'main:bsket_add' product.id %}">
+                    в кошик
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+
+    
+</div>
+<footer class="v">
+    <ul>
+         {%for page in product.paginator.page_range%}
+            <li class="center">
+                <a href= "{% url "main:paginator" page %}">
+                    {{page}}
+                </a>
+            </li>
+        {% endfor%}
+    </ul>
+</footer>
+{% endblock %}

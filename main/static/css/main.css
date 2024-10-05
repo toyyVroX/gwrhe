@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: block;
+    width: 100%;
+    
+}
+body{
+    background-color:rgb(48, 55, 63);
+    color: azure;
+    padding: 0px;
+    font-style: italic;
+}
+#hightshapka {
+    float: left;
+    display: block;
+    width: -80%;
+    font-size: 4vh;
+}
+a{
+    text-decoration: none;
+    color:azure;
+    font-size: 3vh;
+    margin: 2vh;
+}
+header{
+    height: 10vh;
+    background-color: rgb(111, 32, 185);
+    width: 100%;
+    padding: 2vh;
+    border-bottom: 0.5vh solid rgb(245, 245, 245);
+}
+
+
+#ava{
+    float: right;
+    display: block;
+    width: -10%;
+    font-size: 4vh;
+}
+
+.nuz{
+    background-color: rgb(111, 32, 185);
+    height: 20vh;
+    width: 100%;
+    padding: 2vh;
+    border-top: 0.5vh solid rgb(245, 245, 245);
+    display: block;
+    float: inline-end;
+}
+
+#top{
+    display: block;
+    float: left;
+    width: 40%;
+}
+
+.top{
+    font-size: 2vh;
+    
+}
+
+#contact{
+    display: block;
+    float: right;
+    width: 40%;
+}
+
+.contact{
+    font-size: 2vh;
+    
+}
+
+.f{
+    color: azure;
+}
+
+.boom{
+    color:brown;
+}

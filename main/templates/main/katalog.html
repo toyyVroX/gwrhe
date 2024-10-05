@@ -1,0 +1,26 @@
+{% extends 'main/xx.html' %}
+
+{% block title %}Каталог{% endblock %}
+
+{% load static %}
+
+{% block sale %}
+<link rel="stylesheet" href="{% static  'css/prodaza.css' %}">
+
+    <div class="osnova">
+        {% for category in category %}
+            <a href="{% url "main:category" category.id %}">
+                <div class="tovar">
+                
+                    <img
+                    src="{{category.image.url }}">
+                    <p class"">{{ category.name}}</p>
+                    <p>{{ category.description}}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+    <div>
+        Тут короче повинно було бути багато категорій і багато товарів в категоріях, але мій робітник який займається вирізанням фонів уста. Кстаті в мене немає робітника, я сам вирізав, не судіть строго я робив на скору руку.
+    </div>
+{% endblock %}

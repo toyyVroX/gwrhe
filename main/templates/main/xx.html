@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static  'css/main.css' %}">
+    
+</head>
+<body>
+    <header>
+        <div id="ava" href="">sexshop</div>
+        
+        <div id="hightshapka">
+            <a href="{% url 'main:katalog'%}"> Каталог</a>
+            <a href="{% url 'main:pronas'%}"> Про нас</a>
+            <a href="{% url 'main:kontakt'%}"> Контакти</a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'users:profile'%}"> Профіль </a>
+            {% else %}
+                <a href="{% url 'users:login'%}"> Войти </a>
+            {% endif %}
+        </div>
+    </header>
+<div class="f">
+    {% block sale %}
+    {% endblock %}
+</div>
+    <footer class="nuz">
+        <div id="top">
+            <div class="top">Топ покупців:</div>
+            <div class="top">1. Андрій Заводський</div>
+            <div class="top">2. Важке прізвище Назар</div>
+        </div>
+        <div id="contact">
+            <div class="contact">Контакти</div>
+            <div class="contact">Номер: none</div>
+            <div class="contact">Тлеграм: none</div>
+            <div class="contact">Інстаграм: none</div>
+        </div>
+    </footer>
+</body>
+</html>

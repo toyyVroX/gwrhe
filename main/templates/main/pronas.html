@@ -1,0 +1,25 @@
+{% extends 'main/xx.html' %}
+
+{% block title %}sexshop{% endblock %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static  'main/css/main.css' %}">
+
+{% block sale %}
+<main>
+<div>
+    <h1>Тут повинно бути назва фірми</h1>
+</div>
+<div>
+    <h4>Тут опис фірми, цікаві факти і тд по типу історії створення</h4>
+
+</div>
+<div>
+    <h6>Тут подобна карта щоб показат де находиться фірма</h6>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37278.743866776356!2d33.23215055326177!3d50.360063525794715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d610cb2f414695%3A0xd4f65b62c922520a!2z0JvQvtGF0LLQuNGG0Y8sINCf0L7Qu9GC0LDQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e1!3m2!1suk!2sua!4v1728137238827!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div>
+</div>
+</main>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'main/xx.html' %}
+
+{% block title %}Каталог{% endblock %}
+
+{% load static %}
+
+{% block sale %}
+
+<link rel="stylesheet" href="{% static  'css/resume.css' %}">
+
+<div class="">
+    {% for product in product %}
+        <p class="name">{{ product.name}}</p>
+        <div class="foto">
+            <img src="{{product.image.url }}">
+        </div>
+        <div class="opus">
+            <p class="beng">Опис:<br>{{ product.opus}}</p>
+            <p class="coust">{{ product.coust}}грн</p>
+            <p class="quantity">На складі:{{ product.quantity}} шт</p>
+            <a class="vkoh" href="{% url 'main:bsket_add' product.id %}">
+                в кошик
+            </a>
+        </div>
+    {%endfor%}
+</div>
+
+{% endblock %}

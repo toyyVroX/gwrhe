@@ -1,0 +1,18 @@
+{% extends 'main/xx.html' %}
+
+{% block title %}sexshop{% endblock %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static  'main/css/golovna.css' %}">
+
+{% block sale %}
+<main>
+    {% csrf_token %}
+<div>
+    Ну що я вам скажу, головну сторінку було ну так в падло робити, це просто монотонна робота. Так що можете послухати золотую чашу
+</div>
+<video controls src="{%static 'img\oo.mp4' %}" >
+</video>
+</main>
+{% endblock %}
